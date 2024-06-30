@@ -1,14 +1,13 @@
 from collections.abc import Iterator
 
 import requests
-from PaperBoi.Models.Magazine import Magazine
 from selenium import webdriver
 
+from PaperBoi.Models.Magazine import Magazine
 from PaperBoi.Providers import IMPLICIT_TIMEOUT_SECONDS, PAGE_LOAD_TIMEOUT_SECONDS
 
 
 class BaseProvider:
-
     def __init__(self) -> None:
         self.requests_session = requests.Session()
         self._init_selenium()
