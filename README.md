@@ -10,6 +10,7 @@ pip install -r .\python-requirements.txt
 ```
 
 ## Scripts
-
-`GetSparMagazines.py`:
-    Prints the base64 string representation of the currently available SPAR magazines to standard out.
+<dl>
+    <dt><kbd>GetSparMagazines.py</kbd></dt>
+    <dd>Prints the base64 string representation of the currently available SPAR magazines to standard out.</dd>
+</dl>
