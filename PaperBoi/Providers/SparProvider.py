@@ -19,9 +19,7 @@ class SparProvider(BaseProvider):
 
         for magazine_anchor in magazine_anchors:
 
-            magazine_bytes = self.requests_session.get(
-                magazine_anchor.get_attribute("href")
-            ).content
+            magazine_bytes = self.requests_session.get(magazine_anchor.get_attribute("href")).content
             base64_magazine = base64.b64encode(magazine_bytes).decode("ascii")
 
             yield Magazine(
